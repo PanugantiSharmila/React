@@ -16,6 +16,8 @@ import styles from "./appStyles.module.css";
 import { FocusInput } from "./components/FocusInput";
 import { FocusInputWrap } from "./components/FocusInputWrap";
 import Form from "./components/Form";
+import { LifeCycleA } from "./components/LifeCycleA";
+import FragmentDemo from "./components/FragmentDemo";
 
 function App() {
   return (
@@ -47,7 +49,9 @@ function App() {
       {/* <Inline /> */}
       {/* <FocusInput /> */}
       {/* <FocusInputWrap /> */}
-      <Form />
+      {/* <Form /> */}
+      {/* <LifeCycleA /> */}
+      <FragmentDemo />
     </div>
   );
 }
