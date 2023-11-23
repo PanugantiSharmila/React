@@ -21,6 +21,23 @@ import FragmentDemo from "./components/FragmentDemo";
 import Tables from "./components/Tables";
 import PureComp from "./components/PureComp";
 import ParentComp from "./components/ParentComp";
+import MemoComp from "./components/MemoComp";
+import FRParentInput from "./components/FRParentInput";
+import { PortalDemo } from "./components/PortalDemo";
+import Hero from "./components/Hero";
+import ErrorBoundary from "./components/ErrorBoundary";
+import ClickCount from "./components/ClickCount";
+import HoverCounter from "./components/HoverCounter";
+import ClickCounterTwo from "./components/ClickCounterTwo";
+import HoverCounterTwo from "./components/HoverCounterTwo";
+import User from "./components/User";
+import Counter from "./components/Counter";
+import { ComponentC } from "./components/ComponentC";
+import { UserProvider } from "./components/userContext";
+import { PostList } from "./components/PostList";
+import { PostForm } from "./components/PostForm";
+import PostListAxios from "./components/PostListAxios";
+import PostFormAxios from "./components/PostFormAxios";
 
 function App() {
   return (
@@ -57,7 +74,47 @@ function App() {
       {/* <FragmentDemo /> */}
       {/* <Tables /> */}
       {/* <PureComp /> */}
-      <ParentComp />
+      {/* <ParentComp /> */}
+      {/* <MemoComp name="CGG" /> */}
+      {/* <FRParentInput /> */}
+      {/* <PortalDemo /> */}
+      {/* <ErrorBoundary>
+        <Hero heroName="Joker"></Hero>
+      </ErrorBoundary>
+      <Hero heroName="BatMan"></Hero>
+      <Hero heroName="SuperMan"></Hero> */}
+      {/* <ClickCount name="CGG" />
+      <HoverCounter /> */}
+      {/* <ClickCounterTwo />
+      <HoverCounterTwo />
+      <User render={(isLoggedIn) => (isLoggedIn ? "CGG" : "Guest")} /> */}
+      {/* <Counter
+        render={(count, incrementCount) => (
+          <ClickCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      />
+      <Counter
+        render={(count, incrementCount) => (
+          <HoverCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      /> */}
+      {/* <Counter>
+        {(count, incrementCount) => (
+          <ClickCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      </Counter>
+      <Counter>
+        {(count, incrementCount) => (
+          <HoverCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      </Counter> */}
+      {/* <UserProvider value="CGG">
+        <ComponentC />
+      </UserProvider> */}
+      {/* <PostList /> */}
+      {/* <PostForm /> */}
+      {/* <PostListAxios /> */}
+      <PostFormAxios />
     </div>
   );
 }
